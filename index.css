@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100');
+
 
     @font-face {
       font-family: bookmaniaBlackItalic;
@@ -20,9 +20,19 @@
       src: url(assets/Bookmania\ Light.otf);
     }
 
+    @font-face {
+      font-family: SFLight;
+      src: url(assets/SF-Pro-Display-Ultralight.otf);
+    }
+
+    @font-face {
+      font-family: SFBold;
+      src: url(assets/SF-Pro-Display-Bold.otf);
+    }
+
   	body{
 			margin: 0;
-			font-family: 'Alegreya Sans', sans-serif;
+			font-family: 'SFLight';
 			font-weight:100;
 		}
 		.container{
@@ -89,12 +99,6 @@
 			transition: .3s;
       cursor:pointer;
     }
-		.banner{                 background:url("http://mateen.kurdzman.net/ban.png") no-repeat;
-			width: 100%;
-      height: 585px;
-      background-position:center;
-      background-size:cover;
-		}
 		
 
 #background-video {
@@ -118,14 +122,13 @@
 }
 
 .text-center {
-    margin-top: auto;
     text-align: center!important;
 }
 .error {
-    font-family: bookmaniaBlackItalic;
+    font-family: SFBold;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 42%;
     color: #009c15;
     font-size: 7rem;
     line-height: 1;

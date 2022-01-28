@@ -41,6 +41,7 @@
     }
 
   	body{
+      cursor: url(assets/paw1.png), auto;
 			margin: 0;
 			font-family: 'SFText';
 			font-weight:100;

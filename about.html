@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Glory Boy</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Calvin Lim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif" href="assets/favicon.ico">
+    <link rel = "stylesheet" href = "about.css">
+    <script>
+        var i = 0;
+        var txt1 = 'ENV | Spilled Ink';
+        var speed1 = 150;
+
+        var j = 0;
+        var txt2 = "This Is What We Do But We Still Don't Know What Any Of It Means ¯\_(ツ)_/¯";
+        var speed2 = 100;
+
+        function type1() {
+            if (i < txt1.length) {
+                document.getElementById("env").innerHTML += txt1.charAt(i);
+                i++;
+                setTimeout(type1, speed1);
+            }
+        }
+
+        function type2() {
+            if (j < txt2.length) {
+                document.getElementById("text").innerHTML += txt2.charAt(j);
+                j++;
+                setTimeout(type2, speed2);
+            }
+        }
+        const myTimeout = setTimeout(type2, 4000);
+    </script>
+</head>
+
+<body onload="type1()">
+    <div class="header">
+        <p id="env"></p>
+    </div>
+    <div class="description">
+        <p id="text"></p>
+    </div>
+    <div class="footer">
+        <ul>
+          <li><a href="mailto:https.calvinlim@gmail.com">Contact</a></li>
+          <li><a href="https://calvinwlim.github.io/calvinwlim/">Website</a></li>
+          <li><a href="https://dribbble.com/calvinwlim">Dribbble</a></li>
+          <li><a href="https://behance.com/calvnwlim">Behance</a></li>
+          <li><a href="https://github.com/calvinwlim">Github</a></li>
+          <li>@ 2022 ENV | Spilled Ink </li>
+        </ul>
+    </div>
+</body>

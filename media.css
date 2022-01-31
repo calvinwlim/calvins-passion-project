@@ -1,6 +1,12 @@
+@font-face {
+  font-family: bookmaniaLight;
+  src: url(assets/Bookmania\ Light.otf);
+}
+  
   .gallery {
     padding: 0 0 4rem 0;
  }
+
   .img-container {
     padding: 35px;
     width: 50%;
